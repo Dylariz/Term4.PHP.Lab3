@@ -2,7 +2,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $dirName = $_POST['dirName'];
     if (!file_exists($dirName)) {
-        mkdir($dirName, 0777, true);
+        mkdir($dirName);
         echo "Директория '$dirName' успешно создана";
     } else {
         echo "Директория '$dirName' уже существует";
