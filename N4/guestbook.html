@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Гостевая книга</title>
+</head>
+<body>
+    <form action="process_guestbook.php" method="post">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="message">Ваше сообщение:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        <input type="submit" value="Отправить"><br>
+    </form>
+    <a href="process_guestbook.php" style="text-decoration: none;"><button style='margin-top: 10px'>Просмотреть книгу</button></a>
+</body>
+</html>
